@@ -1,0 +1,26 @@
+public void DFS(int startV){
+	Node tmpNode;
+	int v;
+	for(int i=0; i<N; i++){
+		visited[i]=false;
+	}
+	Stack s=new Stack();
+	s.push(startV);
+	while(!s.isEmpty()){
+		v=(int)s.pop():
+		if(visited[v]==false){
+		System.out.print("->"+v):
+		visited[v]=true;
+
+		tmpNode=header[v];
+		while(tmpNode!=null){
+
+			if(visited[tmpNode.data]==false){
+				s.push(tmpNode.data):
+			}
+			tmpNode=tmpNode.link;
+		}
+	}
+}
+	System.out.println();
+}
